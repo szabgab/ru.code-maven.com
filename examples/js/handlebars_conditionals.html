@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Handlebars conditionals</title>
+
+  <script id="text-template" type="text/x-handlebars-template">
+    <br>#iff name '==' 'Foo' (expected true)
+    {{#iff name '==' 'Foo'}}
+      true
+    {{else}}
+      false
+    {{/iff}}
+
+    <br>#iff 42 &gt; 40 (expected true)
+    {{#iff answer '>' 40}}
+      true
+    {{else}}
+      false
+    {{/iff}}
+
+    <br>#iff 42 &gt; 50 (expected false)
+    {{#iff answer '>' 50}}
+      true
+    {{else}}
+      false
+    {{/iff}}
+  </script>
+
+  <script id="text2-template" type="text/x-handlebars-template">
+    <br>Exception!
+    {{#iff 4 '*' 5}}
+       true
+    {{else}}
+       false
+    {{/iff}}
+  </script>
+
+</head>
+<body>
+<button id="show">Show</button>
+<button id="show2">Try invalid</button>
+<hr>
+<div id="content"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.min.js"></script>
+<script src="/try/examples/js/handlebars_conditionals.js"></script>
+
+</body>
+</html>
+

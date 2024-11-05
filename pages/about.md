@@ -1,14 +1,10 @@
 ---
-title: About
-timestamp: 2015-10-11T12:30:02
+title: "About Code Maven"
+timestamp: 2015-02-02T15:15:02
 published: true
-author: foobar
-description: About this site
-tags:
-    - about
-todo:
-    - TODO
+original: about
+archive: false
+show_related: false
 ---
 
-This is the skeleton of an about page
-
+See [here](http://code-maven.com/about).
